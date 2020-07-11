@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
+// home page with button
 function HomeScreen({ navigation }) {
 
   return (
@@ -19,6 +20,7 @@ function HomeScreen({ navigation }) {
 }
 
 
+// playlist page with api fetch
 function PlaylistScreen({ navigation }) {
 
   const [isLoading, setLoading] = useState(true);
@@ -56,6 +58,7 @@ function PlaylistScreen({ navigation }) {
 const Stack = createStackNavigator();
 
 
+// App function. Title and Routes definition
 function App() {
 
   return (
